@@ -1,0 +1,20 @@
+
+.plain-yellow-background{
+    -fx-background-color: #FFC300;
+}
+
+.plain-dark-blue{
+    -fx-background-color: #001D3D;
+}
+
+.plain-lighter-blue{
+    -fx-background-color: #003566;
+}
+
+.plain-lighter-yellow{
+    -fx-background-color: #FFD60A;
+}
+
+.box:hover{
+    -fx-background-color: #001D3D;
+}

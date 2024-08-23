@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane fx:id="bd" fx:controller="client.view.admin.EditAccountPaneFX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="641.0" prefWidth="732.0" styleClass="plain-dark-blue" stylesheets="@../../css/style.css"
+            BorderPane.alignment="CENTER">
+         <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="650.0" prefWidth="833.0">
+            <Pane prefHeight="40.0" prefWidth="732.0" styleClass="plain-yellow-background"
+                  stylesheets="@../../css/style.css">
+               <opaqueInsets>
+                  <Insets/>
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="41.0"/>
+               </VBox.margin>
+            </Pane>
+            <Label prefHeight="62.0" prefWidth="242.0" text="Edit Account" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Coco Gothic" size="39.0"/>
+               </font>
+            </Label>
+            <VBox maxWidth="-Infinity" prefHeight="55.0" prefWidth="298.0">
+               <padding>
+                  <Insets top="13.0"/>
+               </padding>
+               <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="97.0" text="New ID No:" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0"/>
+                  </font>
+               </Label>
+               <TextField fx:id="editIdNumberTextField"/>
+            </VBox>
+            <VBox maxWidth="-Infinity" prefHeight="55.0" prefWidth="298.0">
+               <padding>
+                  <Insets top="13.0"/>
+               </padding>
+               <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="111.0" text="New Password:"
+                      textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0"/>
+                  </font>
+               </Label>
+               <TextField fx:id="newPasswordTextField"/>
+            </VBox>
+            <VBox maxWidth="-Infinity" prefHeight="55.0" prefWidth="298.0">
+               <padding>
+                  <Insets top="13.0"/>
+               </padding>
+               <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="111.0" text="Confirm Password:"
+                      textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0"/>
+                  </font>
+               </Label>
+               <TextField fx:id="confirmPasswordTextField"/>
+            </VBox>
+            <Label fx:id="errorPrompt" alignment="CENTER" prefHeight="17.0" prefWidth="234.0" text=" "
+                   textFill="#009431">
+               <font>
+                  <Font size="15.0"/>
+               </font>
+            </Label>
+            <Button fx:id="confirmButton" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="33.0" prefWidth="290.0"
+                    styleClass="plain-yellow-background" stylesheets="@../../css/style.css" text="Confirm"/>
+            <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#cancelEdit" prefHeight="30.0" prefWidth="290.0"
+                    style="-fx-background-color: red;" styleClass="plain-yellow-background"
+                    stylesheets="@../../css/style.css" text="Back">
+               <VBox.margin>
+                  <Insets top="6.0"/>
+               </VBox.margin>
+            </Button>
+         </VBox>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.student.LandingPageControllerFX">
+   <HBox prefHeight="60.0" prefWidth="850.0" styleClass="plain-dark-blue" stylesheets="@../../css/style.css">
+      <Pane prefHeight="69.0" prefWidth="237.0">
+         <ImageView fitHeight="305.0" fitWidth="331.0" layoutX="-62.0" layoutY="-122.0">
+            <Image url="@../../img/standardLogo.png" />
+         </ImageView>
+      </Pane>
+      <Pane prefHeight="69.0" prefWidth="281.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="311.0">
+         <Pane prefHeight="69.0" prefWidth="76.0">
+            <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="7.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../img/userIcon.png" />
+            </ImageView>
+         </Pane>
+         <VBox alignment="TOP_CENTER" prefHeight="62.0" prefWidth="128.0">
+            <HBox.margin>
+               <Insets top="2.0" />
+            </HBox.margin>
+            <Label fx:id="userIDText" prefHeight="37.0" prefWidth="154.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="37.0" prefWidth="154.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="Coco Gothic Light" size="15.0" />
+               </font>
+            </Label>
+         </VBox>
+         <Button fx:id="signOutButton" mnemonicParsing="false" onAction="#backToLogin" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: red;" text="Sign Out" textFill="WHITE" />
+      </HBox>
+   </HBox>
+   <HBox prefHeight="641.0" prefWidth="850.0" styleClass="plain-lighter-blue" stylesheets="@../../css/style.css">
+      <BorderPane fx:id="bp" prefHeight="641.0" prefWidth="779.0">
+         <center>
+            <Pane fx:id="homePanel" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <ImageView fitHeight="641.0" fitWidth="772.0" opacity="0.79">
+                  <Image url="@../../img/SLU_Main.jpg" />
+               </ImageView>
+               <ImageView fitHeight="234.0" fitWidth="180.0" layoutX="14.0" layoutY="14.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../img/SLU-LOGO-TRANSPARENT-769x1024.png" />
+               </ImageView>
+               <Label layoutX="173.0" layoutY="43.0" prefHeight="59.0" prefWidth="483.0" text="Saint Louis University" textFill="WHITE">
+                  <font>
+                     <Font name="Cocogoose Pro UltraLight" size="42.0" />
+                  </font>
+               </Label>
+               <Label layoutX="173.0" layoutY="82.0" prefHeight="59.0" prefWidth="483.0" text="Baguio City" textFill="WHITE">
+                  <font>
+                     <Font name="Coco Gothic Light" size="27.0" />
+                  </font>
+               </Label>
+            </Pane>
+         </center>
+      </BorderPane>
+      <VBox prefHeight="641.0" prefWidth="81.0">
+         <VBox fx:id="homeSideBar" alignment="CENTER" onMouseClicked="#isSelected" prefHeight="81.0" prefWidth="76.0" stylesheets="@../../css/style.css">
+            <padding>
+               <Insets bottom="10.0" />
+            </padding>
+            <styleClass>
+               <String fx:value="plain-dark-blue" />
+               <String fx:value="box" />
+            </styleClass>
+            <Pane prefHeight="54.0" prefWidth="76.0">
+               <ImageView fitHeight="57.0" fitWidth="62.0" layoutX="7.0" layoutY="-4.0">
+                  <Image url="@../../img/IconHome.png" />
+               </ImageView>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="76.0" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Coco Gothic Light" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </VBox>
+         <VBox fx:id="reservationSideBar" alignment="CENTER" onMouseClicked="#isSelected" prefHeight="81.0" prefWidth="76.0" styleClass="box" stylesheets="@../../css/style.css">
+            <padding>
+               <Insets bottom="10.0" />
+            </padding>
+            <Pane prefHeight="54.0" prefWidth="76.0">
+               <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="10.0" layoutY="10.0">
+                  <Image url="@../../img/BookingIcon.png" />
+               </ImageView>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="76.0" text="Reservations" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Coco Gothic Light" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </VBox>
+      </VBox>
+   </HBox>
+</VBox>

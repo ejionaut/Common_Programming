@@ -1,0 +1,42 @@
+[
+  {
+    "userID": 123,
+    "reservationID": 1,
+    "unitID": 1,
+    "date": "2024-04-03",
+    "startTime": "08:00",
+    "endTime": "10:00"
+  },
+  {
+    "userID": 456,
+    "reservationID": 2,
+    "unitID": 1,
+    "date": "2024-04-03",
+    "startTime": "09:00",
+    "endTime": "11:00"
+  },
+  {
+    "userID": 123,
+    "reservationID": 3,
+    "unitID": 1,
+    "date": "2024-04-05",
+    "startTime": "07:00",
+    "endTime": "08:00"
+  },
+  {
+    "userID": 123,
+    "reservationID": 4,
+    "unitID": 12,
+    "date": "2024-04-05",
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "userID": 456,
+    "reservationID": 5,
+    "unitID": 1,
+    "date": "2024-04-06",
+    "startTime": "12:00",
+    "endTime": "14:00"
+  }
+]
